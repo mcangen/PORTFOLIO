@@ -2,26 +2,26 @@
     color: red !important;
 }
 .carousel-control-prev{
-    background-color: #3056d354;
+    background-color: var(--primary-color);
     filter: blur(0.1px);
     transition: 1s ease-in-out;
 
 }
 .carousel-control-next{
-    background-color: #3056d354;
+    background-color: var(--primary-color);
     filter: blur(0.1px);
     transition: 1s ease-in-out;
 
 }
 .card {
   border-radius: 13px;
-  border: 1px solid #3056d3;
+  border: 1px solid var(--primary-color);
   transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
 
 .card:hover {
-  -webkit-box-shadow: -3px -2px 23px 5px rgba(48,86,211,0.45); 
-  box-shadow: -3px -2px 23px 5px rgba(48,86,211,0.45);
+  -webkit-box-shadow: -3px -2px 23px 5px var(--primary-color); 
+  box-shadow: -3px -2px 23px 5px var(--primary-color);
   transform: translateY(-4px); /* opcional: levanta un poquito la card */
 }
 
@@ -140,3 +140,69 @@
     cursor: zoom-out;
     transform: scale(1.8); /* nivel de zoom */
   }
+
+.udhome{
+    height: 100vh;
+    background-image: url(../images/homephoto.jpg);
+    filter: grayscale(1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 1s ease, transform 0.3s ease ;
+}
+.udhome:hover{
+    filter: grayscale(0);
+}
+:root{
+    --primary-color: #724e0fc2 !important;
+}
+#fullscreenBtn{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.primerseguimientoimage{
+    height: 100vh;
+    background-image: url(../images/1seguimientophoto.jpg);
+    filter: grayscale(1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 1s ease, transform 0.3s ease ;
+}
+.primerseguimientoimage:hover{
+    filter: grayscale(0);
+}
+
+
+body {
+  --sb-track-color: #50442f;
+  --sb-thumb-color: #8e723f;
+  --sb-size: 9px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+/* Tarjetas */
+.tarjetas{
+    padding: 0 30px;
+}
