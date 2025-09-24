@@ -8,23 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortFolio</title>
 
-    <!-- Primary Meta Tags -->
-<meta name="title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
-<meta name="description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://uideck.com/play/">
-<meta property="og:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
-<meta property="og:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
-<meta property="og:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://uideck.com/play/">
-<meta property="twitter:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
-<meta property="twitter:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
-<meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
+     <!-- Primary Meta Tags -->
+    <meta name="title" content="PortFolio">
+    <meta name="description" content="Universidad del magdalena">
 
     <!--====== Favicon Icon ======-->
     <link
@@ -43,88 +29,6 @@
     <link rel="stylesheet" href="../css/test.css">
     
 
-    <style>
-    /* estilos de ejemplo (adáptalos a tu tema) */
-    .gallery { display:flex; gap:16px; flex-wrap:wrap; padding:20px; }
-    .gallery img { width:220px; height:auto; cursor:pointer; border-radius:6px; box-shadow:0 4px 10px rgba(0,0,0,.08); }
-
-    /* overlay/modal */
-    .lightbox-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.7);
-      display: none;              /* oculto por defecto */
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      padding: 20px;
-    }
-    .lightbox-overlay.open { display:flex; }
-
-    /* contenedor de la imagen */
-    .lightbox-content {
-      position: relative;
-      max-width: 95vw;
-      max-height: 95vh;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #fff; /* opcional para borde blanco */
-      box-shadow: 0 12px 30px rgba(0,0,0,.35);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .lightbox-content img {
-      max-width: 90vw;
-      max-height: 90vh;
-      width: auto;
-      height: auto;
-      display:block;
-      object-fit: contain;
-      transition: transform .25s ease;
-    }
-
-    /* boton cerrar */
-    .lightbox-close {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      background: rgba(0,0,0,.6);
-      color: #fff;
-      border: none;
-      width:36px;
-      height:36px;
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      cursor:pointer;
-      font-size:18px;
-      line-height:1;
-    }
-    .lightbox-caption {
-      position: absolute;
-      left: 16px;
-      right: 16px;
-      bottom: 8px;
-      color: #fff;
-      text-align: center;
-      font-size: 14px;
-      text-shadow: 0 2px 6px rgba(0,0,0,.6);
-    }
-
-    /* animación de entrada (opcional) */
-    .lightbox-content.opening img { transform: scale(.98); opacity:0; animation: appear .18s ease forwards; }
-    @keyframes appear { to { transform: scale(1); opacity:1; } }
-
-    /* pequeña adaptación para móviles */
-    @media (max-width:600px){
-      .gallery img{ width:calc(50% - 12px); }
-      .lightbox-close { width:32px; height:32px; font-size:16px; }
-    }
-  </style>
-
   </head>
   <body>
     <!-- ====== Header Start ====== -->
@@ -133,9 +37,7 @@
         <div class="row">
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
-              <!-- <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo/logo.svg" alt="Logo" />
-              </a> -->
+             
               <button class="navbar-toggler">
                 <span class="toggler-icon"> </span>
                 <span class="toggler-icon"> </span>
@@ -151,15 +53,11 @@
                   <li class="nav-item">
                     <a  href="../../index.html">Sobre</a>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#pricing">Pricing</a>
-                  </li> -->
+                 
                   <li class="nav-item">
                     <a  href="../../index.html">Equipo</a>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#contact">Contact</a>
-                  </li> -->
+                 
                   <li class="nav-item nav-item-has-children">
                     <a href="javascript:void(0)"> Periodos </a>
                     <ul class="ud-submenu">
@@ -183,37 +81,12 @@
                           Investigación
                         </a>
                       </li>
-                      <!-- <li class="ud-submenu-item">
-                        <a href="blog.html" class="ud-submenu-link">
-                          Blog Grid Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="blog-details.html" class="ud-submenu-link">
-                          Blog Details Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="login.html" class="ud-submenu-link">
-                          Sign In Page
-                        </a>
-                      </li>
-                      <li class="ud-submenu-item">
-                        <a href="404.html" class="ud-submenu-link">404 Page</a>
-                      </li> -->
+                      
                     </ul>
                   </li>
                 </ul>
               </div>
 
-              <!-- <div class="navbar-btn d-none d-sm-inline-block">
-                <a href="login.html" class="ud-main-btn ud-login-btn">
-                  Sign In
-                </a>
-                <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
-                  Sign Up
-                </a>
-              </div> -->
             </nav>
           </div>
         </div>
@@ -222,7 +95,7 @@
     <!-- ====== Header End ====== -->
 
     <!-- ====== Hero Start ====== -->
-    <section class="ud-hero" id="home" >
+    <section  class="ud-hero" id="home" >
       <div class="">
         <div class="row">
           <div>
@@ -236,34 +109,33 @@
       </div>
     </section>
     
-    <section style="display: flex; gap: 10px; margin-top: 15px; padding: 0 15px 0 15px; ">
-      <div class="card" style="width: 30rem;" >
-      <img class="lightbox-img" src="../images/poemas/poemas _page-0002.jpg" class="card-img-top" alt="...">
-        <div class="card-body" style="text-align: center;">
-          <p class="card-text">POEMA: EL AULA DE SIEMPRE</p>
-        </div>
-      </div>
+    <section class="cards-section">
+  <div class="card">
+    <img class="lightbox-img" src="../images/poemas/poemas _page-0002.jpg" alt="...">
+    <div class="card-body" style="text-align: center;">
+      <p class="card-text">POEMA: EL AULA DE SIEMPRE</p>
+    </div>
+  </div>
 
-      <div class="card" style="width: 30rem;" >
-      <img class="lightbox-img" src="../images/cartografiag/cartogloba.jpg" class="card-img-top" alt="...">
-        <div class="card-body" style="text-align: center;">
-          <p class="card-text">CARTOGRAFIA SOBRE LA GLOBALIZACIÓN</p>
-        </div>
-      </div>
+  <div class="card">
+    <img class="lightbox-img" src="../images/cartografiag/cartogloba.jpg" alt="...">
+    <div class="card-body" style="text-align: center;">
+      <p class="card-text">CARTOGRAFIA SOBRE LA GLOBALIZACIÓN</p>
+    </div>
+  </div>
 
-      <div class="card" style="width: 30rem;" >
-      <img class="lightbox-img" src="../images/poemas/poemas _page-0003.jpg" class="card-img-top" alt="...">
-        <div class="card-body" style="text-align: center;">
-          <p class="card-text">POEMA: EL AULA SINFONICA </p>
-        </div>
-      </div>
-
-    </section>
+  <div class="card">
+    <img class="lightbox-img" src="../images/poemas/poemas _page-0003.jpg" alt="...">
+    <div class="card-body" style="text-align: center;">
+      <p class="card-text">POEMA: EL AULA SINFONICA</p>
+    </div>
+  </div>
+</section>
 
 
   
     <!-- ====== Hero End ====== -->
-    <div height="300px" id="carouselExampleCaptions" class="carousel slide" style="margin-top: 30px;" >
+    <div  height="300px" id="carouselExampleCaptions" class="carousel slide" style="margin-top: 30px;" >
       <div style="text-align: center;">
         <h2>CONFLICTOS GEOPOLITICOS</h2>
       </div>
@@ -342,6 +214,7 @@
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
+
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -350,14 +223,23 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+
+   <!-- Botón pantalla completa -->
+  <button id="fullscreenBtn" class="btn btn-primary"
+          style="position:absolute; top:10px; right:10px; z-index:1050;">
+    ⛶
+  </button>
+
 </div>
    
 
-    <!-- ====== Back To Top Start ====== -->
-    <a href="javascript:void(0)" class="back-to-top">
-      <i class="lni lni-chevron-up"> </i>
+   <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top" id="backToTop">
+      <i class="lni lni-chevron-up"></i>
     </a>
-    <!-- ====== Back To Top End ====== -->
+  <!-- ====== Back To Top End ====== -->
+
+  
   <!-- Modal / Lightbox (inserta en body al final) -->
     <div id="lightboxOverlay" class="lightbox-overlay" role="dialog" aria-modal="true" aria-hidden="true">
       <div class="lightbox-content" role="document">
@@ -367,126 +249,12 @@
       </div>
     </div>
 
-     <script>
-    (function(){
-      const overlay = document.getElementById('lightboxOverlay');
-      const lbImage = document.getElementById('lightboxImage');
-      const lbCaption = document.getElementById('lightboxCaption');
-      const closeBtn = overlay.querySelector('.lightbox-close');
-
-      // abrir lightbox cuando se hace click en .lightbox-img
-      function openLightbox(imgEl){
-        const src = imgEl.getAttribute('src');
-        const alt = imgEl.getAttribute('alt') || '';
-        lbImage.src = src;
-        lbImage.alt = alt;
-        lbCaption.textContent = alt;
-        // mostrar overlay
-        overlay.classList.add('open');
-        overlay.setAttribute('aria-hidden','false');
-        // para animación (opcional)
-        overlay.querySelector('.lightbox-content').classList.add('opening');
-        // foco accesible en el botón cerrar
-        closeBtn.focus();
-        // bloquear scroll del body (opcional)
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeLightbox(){
-        overlay.classList.remove('open');
-        overlay.setAttribute('aria-hidden','true');
-        overlay.querySelector('.lightbox-content').classList.remove('opening');
-        lbImage.src = '';
-        lbImage.alt = '';
-        lbCaption.textContent = '';
-        document.body.style.overflow = '';
-      }
-
-      // delegado: todas las imágenes con la clase
-      document.addEventListener('click', function(e){
-        const clicked = e.target;
-        if (clicked.classList && clicked.classList.contains('lightbox-img')) {
-          openLightbox(clicked);
-        }
-      });
-
-      // cerrar con botón
-      closeBtn.addEventListener('click', closeLightbox);
-
-      // cerrar si se hace click fuera de la imagen (en overlay)
-      overlay.addEventListener('click', function(e){
-        // si el click no fue dentro del .lightbox-content lo cerramos
-        if (e.target === overlay) closeLightbox();
-      });
-
-      // cerrar con ESC
-      document.addEventListener('keydown', function(e){
-        if (e.key === 'Escape' && overlay.classList.contains('open')) {
-          closeLightbox();
-        }
-      });
-
-      // evitar que el click dentro del contenido cierre el modal
-      overlay.querySelector('.lightbox-content').addEventListener('click', function(e){
-        e.stopPropagation();
-      });
-
-      // mejora opcional: permitir navegación entre imágenes (izq/der)
-      // (no incluida por simplicidad; dime si la quieres)
-
-    })();
-
-
-  </script>
-
     <!-- ====== All Javascript Files ====== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    
-    <script>
-      // ==== for menu scroll
-      const carousel = new bootstrap.Carousel('#myCarousel')
-      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
 
-      pageLink.forEach((elem) => {
-        elem.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector(elem.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-            offsetTop: 1 - 60,
-          });
-        });
-      });
+<script src="../js/components.js"></script>
 
-      // section menu active
-      function onScroll(event) {
-        const sections = document.querySelectorAll(".ud-menu-scroll");
-        const scrollPos =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop;
-
-        for (let i = 0; i < sections.length; i++) {
-          const currLink = sections[i];
-          const val = currLink.getAttribute("href");
-          const refElement = document.querySelector(val);
-          const scrollTopMinus = scrollPos + 73;
-          if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-          ) {
-            document
-              .querySelector(".ud-menu-scroll")
-              .classList.remove("active");
-            currLink.classList.add("active");
-          } else {
-            currLink.classList.remove("active");
-          }
-        }
-      }
-
-      window.document.addEventListener("scroll", onScroll);
-    </script>
   </body>
 </html>

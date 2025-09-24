@@ -13,7 +13,130 @@
     transition: 1s ease-in-out;
 
 }
-.card{
-    border-radius: 13px;
-    border: 1px solid #3056d3;
+.card {
+  border-radius: 13px;
+  border: 1px solid #3056d3;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
+
+.card:hover {
+  -webkit-box-shadow: -3px -2px 23px 5px rgba(48,86,211,0.45); 
+  box-shadow: -3px -2px 23px 5px rgba(48,86,211,0.45);
+  transform: translateY(-4px); /* opcional: levanta un poquito la card */
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+.cards-section .card {
+  max-width: 100%;
+  border-radius: 13px;
+}
+.cards-section img {
+  border-radius: 13px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* CARDS */
+/* estilos de ejemplo (adáptalos a tu tema) */
+    .gallery { display:flex; gap:16px; flex-wrap:wrap; padding:20px; }
+    .gallery img { width:220px; height:auto; cursor:pointer; border-radius:6px; box-shadow:0 4px 10px rgba(0,0,0,.08); }
+
+    /* overlay/modal */
+    .lightbox-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      display: none;              /* oculto por defecto */
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+    .lightbox-overlay.open { display:flex; }
+
+    /* contenedor de la imagen */
+    .lightbox-content {
+      position: relative;
+      max-width: 95vw;
+      max-height: 95vh;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff; /* opcional para borde blanco */
+      box-shadow: 0 12px 30px rgba(0,0,0,.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-content img {
+      max-width: 90vw;
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      display:block;
+      object-fit: contain;
+      transition: transform .25s ease;
+    }
+
+    /* boton cerrar */
+    .lightbox-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(0,0,0,.6);
+      color: #fff;
+      border: none;
+      width:36px;
+      height:36px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      font-size:18px;
+      line-height:1;
+    }
+    .lightbox-caption {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 8px;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      text-shadow: 0 2px 6px rgba(0,0,0,.6);
+    }
+
+    /* animación de entrada (opcional) */
+    .lightbox-content.opening img { transform: scale(.98); opacity:0; animation: appear .18s ease forwards; }
+    @keyframes appear { to { transform: scale(1); opacity:1; } }
+
+    /* pequeña adaptación para móviles */
+    @media (max-width:600px){
+      .gallery img{ width:calc(50% - 12px); }
+      .lightbox-close { width:32px; height:32px; font-size:16px; }
+    }
+
+/* estilos botón subir */
+  .back-to-top.show {
+    display: block;
+  }
+
+  /* zoom en lightbox */
+  .lightbox-zoom {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+  }
+  .lightbox-zoom.zoomed {
+    cursor: zoom-out;
+    transform: scale(1.8); /* nivel de zoom */
+  }
