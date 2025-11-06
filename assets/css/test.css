@@ -173,7 +173,18 @@
 .primerseguimientoimage:hover{
     filter: grayscale(0);
 }
-
+.segundoseguimientoimage{
+    height: 100vh;
+    background-image: url(../images/segundoseguimiento.jpeg);
+    filter: grayscale(1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 1s ease, transform 0.3s ease ;
+}
+.segundoseguimientoimage:hover{
+    filter: grayscale(0);
+}
 
 body {
   --sb-track-color: #50442f;
@@ -205,4 +216,43 @@ body::-webkit-scrollbar-thumb {
 /* Tarjetas */
 .tarjetas{
     padding: 0 30px;
+}
+
+.magdalena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f8f8f8;
+  height: 100vh; /* para que se vea centrado */
+}
+
+/* Contenedor de la imagen */
+.magdalena #magdalena {
+  width: 700px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+/* Efecto al pasar el mouse */
+.magdalea #magdalena:hover {
+  transform: scale(1.1);
+   box-shadow: -3px -2px 23px 5px var(--primary-color)
+}
+
+/* Imagen dentro del contenedor */
+.magdalena #magdalena-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+/* Zoom suave en hover */
+#magdalena:hover #magdalena-img {
+  transform: scale(1.2);
+   box-shadow: -3px -2px 23px 5px var(--primary-color)
 }
