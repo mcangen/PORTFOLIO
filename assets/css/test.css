@@ -185,6 +185,29 @@
 .segundoseguimientoimage:hover{
     filter: grayscale(0);
 }
+.tercerseguimientoimage{
+    height: 100vh;
+    background-image: url(../images/3seguimientofoto.jpg);
+    filter: grayscale(1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 1s ease, transform 0.3s ease ;
+}
+.tercerseguimientoimage:hover{
+    filter: grayscale(0);
+}
+#infografia{
+    filter: brightness(.2);
+    transition: filter 1s ease, transform 0.3s ease ;
+}
+#infografia:hover{
+    filter: brightness(1);
+    -webkit-box-shadow: -3px -2px 23px 5px var(--primary-color); 
+  box-shadow: -3px -2px 23px 5px var(--primary-color);
+  transform: translateY(-4px); /* opcional: levanta un poquito la card */
+}
+
 
 body {
   --sb-track-color: #50442f;
@@ -256,3 +279,5 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.2);
    box-shadow: -3px -2px 23px 5px var(--primary-color)
 }
+
+/*Cambios en equipo*/
